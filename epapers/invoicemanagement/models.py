@@ -33,7 +33,7 @@ class Order(models.Model):
 	supplier = models.ForeignKey(Supplier, null=True, on_delete=models.SET_NULL)
 	date_created = models.DateTimeField(auto_now_add=True, null=True)
 	status = models.CharField(max_length=200, null=True, choices=STATUS)
-	#file = models.FileField()
+	# file = models.FileField()
 
 	def __str__(self):
 		return self.id
